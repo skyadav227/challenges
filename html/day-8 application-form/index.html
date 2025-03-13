@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TGSRTC Bus pass Appplication Form</title>
+  
+</head>
+<body>
+  <center>
+    <table>
+      <tr>
+        <td>
+          <form action="success.html" method="get" autocomplete="off" target="_blank">
+            <center><img src="img.png" alt=""></center>
+            <br>
+            <!-- 1st fieldset -->
+            <fieldset>
+              <legend>Applicants Details</legend>
+              <table cellpadding="5" width="70%">
+                <tr>
+                  <td>
+                    <p><b>Name :</b></p>
+                  </td>
+                  <td>
+                    <input type="text" name="name" pattern="[A-Za-z]{3,20}" title="Enter a valid name" required>
+                  </td>
+                  <td>
+                    <p><b>Father's/Gaurdian's Name :</b></p>
+                  </td>
+                  <td>
+                    <input type="text" name="name" pattern="[A-Za-z]{3,20}" title="Enter avalid name" required>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><b>Date of birth :</b></p>
+                  </td>
+                  <td>
+                   <input type="date" required>
+                  </td>
+                  <td>
+                    <p><b>Gender :</b></p>
+                  </td>
+                  <td>
+                    <input type="radio" name="gender" id="male"><label for="male" name="gender" value="male">Male</label>
+                    <input type="radio" name="gender" id="female"><label for="female" name="gender" value="female">Female</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><b>WhatsApp NO :</b></p>
+                  </td>
+                  <td>
+                    <input type="tel" value="+91" pattern="\+91[6-9][\d]{9}" title="Enter a valid Indian number" required>
+                  </td>
+                  <td>
+                    <p><b>Aadhaar No :</b></p>
+                  </td>
+                  <td>
+                    <input type="tel" pattern="\d{4}\s?\d{4}\s?\d{4}" title="Enter a valid Aadhar number" required>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><b>Photo :</b></p>
+                  </td>
+                  <td>
+                    <input type="file" title="Choose a supported file" required>
+                  </td>
+                  <td>
+                    <p><b>E-mail :</b></p>
+                  </td>
+                  <td>
+                    <input type="email" placeholder="example@gmail.com" pattern="[A-Za-z0-9#$_*]+@[A-Za-z0-9#$_*]+\.[A-Za-z]{2,}" required>
+                  </td>
+                </tr>
+              </table>
+            </fieldset>
+            <br>
+            <!-- 2nd fieldset -->
+            <fieldset>
+              <legend>Residential Address Details</legend>
+              <table cellpadding="5" width="70%">
+                <tr>
+                  <td>
+                    <p><b>Applicant's Address :</b></p>
+                  </td>
+                  <td>
+                    <textarea name="address" id="" required>
+                      
+                    </textarea>
+                  </td>
+                  <td>
+                    <p><b>District :</b></p>
+                  </td>
+                  <td>
+                    <select name="district" id="" required>
+                      <option value="Hyderanbad">Hyderanbad</option>
+                      <option value="Ranga reddy">Ranga reddy</option>
+                      <option value="Nalgonda">Nalgonda</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><b>Mandal :</b></p>
+                  </td>
+                  <td>
+                    <select name="mandal" id="" required>
+                     <option value="Hyderabad">Hyderabad</option>
+                     <option value="Amberpet">Amberpet</option>
+                     <option value="Himayathnagar">Himayathnagar</option>
+                     <option value="Nampally">Nampally</option>
+                     <option value="Saidabad">Saidabad</option>
+                     <option value="Bahadurpura">Bahadurpura</option>
+                     <option value="Golconda">Golconda</option>
+                     <option value="Bandlaguda">Bandlaguda</option>
+                     <option value="Charminar">Charminar</option>
+                     <option value="Ameerpet">Ameerpet</option>
+                    </select>
+                  </td>
+                  <td>
+                    <p><b>Village :</b></p>
+                  </td>
+                  <td>
+                   <select id="location" name="village" size="1" required>
+                    <option value="Ameerpet">Ameerpet</option>
+                    <option value="Begumpet">Begumpet</option>
+                    <option value="SR Nagar">SR Nagar</option>
+                    <option value="Punjagutta">Punjagutta</option>
+                    <option value="Balkampet">Balkampet</option>
+                    <option value="Madhura Nagar">Madhura Nagar</option>
+                    <option value="Sanathnagar">Sanathnagar</option>
+                    <option value="Erragadda">Erragadda</option>
+                    <option value="Borabanda">Borabanda</option>
+                    <option value="Khairtabad">Khairtabad</option>
+                    <option value="Somajiguda">Somajiguda</option>
+                    <option value="Lakdikapool">Lakdikapool</option>
+                    <option value="Masab Tank">Masab Tank</option>
+                    <option value="Musheerabad">Musheerabad</option>
+                    <option value="Himayatnagar">Himayatnagar</option>
+                    <option value="Amberpet">Amberpet</option>
+                    <option value="Kachiguda">Kachiguda</option>
+                    <option value="Nampally">Nampally</option>
+                    <option value="Abids">Abids</option>
+                    <option value="Koti">Koti</option>
+                    <option value="Secunderabad">Secunderabad</option>
+                    <option value="Bowenpally">Bowenpally</option>
+                    <option value="Marredpally">Marredpally</option>
+                    <option value="Trimulgherry">Trimulgherry</option>
+                   </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><b>Pincode :</b></p>
+                  </td>
+                  <td>
+                    <input type="tel" name="pincode" id="pincode" pattern="[\d]{6}" title="Enter a valid 6 didgit pincode" required>
+                  </td>
+                </tr>
+              </table>
+            </fieldset>
+            <br>
+            <!-- 3rd fieldset -->
+             <fieldset>
+              <legend>Pass Type Details :</legend>
+              <table cellpadding="5" width="50%">
+                <tr>
+                  <td>
+                    <p><b>City :</b></p>
+                  </td>
+                  <td>
+                    <select name="city" id="city" required>
+                      <option value="city">-----Select-----</option>
+                      <option value="hyderabad">Hyderabad</option>
+                      <option value="secunderabad">Secunderabad</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><b>Pass Type :</b></p>
+                  </td>
+                  <td>
+                    <select name="passtype" id="passtype" required>
+                      <option value="passtype">-----Select-----</option>
+                      <option value="greater">Greater pass</option>
+                      <option value="general">General pass</option>
+                      <option value="district">District pass</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+             </fieldset>
+             <br>
+             <!-- 4th fieldset -->
+              <fieldset>
+                <legend>Payment mode & Pass collection</legend>
+                 <table cellpadding="5" width="40%">
+                  <tr>
+                    <td>
+                      <p><b>Payment Mode :</b></p>
+                    </td>
+                    <td>
+                      <select name="payment" id="" required>
+                        <option value="payment">-----Select-----</option>
+                        <option value="online">Online</option>
+                        <option value="counter">Counter</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><b>Pass Delivery Mode :</b></p>
+                    </td>
+                    <td>
+                      <select name="pass-delivery" id="" required>
+                        <option value="pass-delivery">-----Select-----</option>
+                        <option value="counter">Counter</option>
+                        <option value="home-delivery">Home Delivery</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><b>Center at which you want to collect :</b></p>
+                    </td>
+                    <td>
+                     <select name="center" id="" required>
+                      <option value="center">-----Select-----</option>
+                      <option value="lb-nagar">L.B Nagar</option>
+                      <option value="dilshuknagar">Dilshuknagar</option>
+                      <option value="hayatnagar">Hayatnagar</option>
+                     </select> 
+                    </td>
+                  </tr>
+                 </table>
+              </fieldset>
+              <br>
+              <center>
+                <img src="img2.png" alt="captcha" width="30%">
+              </center>
+              <center>
+                <input type="tel" name="captcha" pattern="XBVwRw" title="Enter a valid captcha" required>
+                <br><br>
+                <input type="submit">
+              </center>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>
