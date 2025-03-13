@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+</head>
+<body>
+  <br><br>
+  <center>
+    <table border="" cellspacing="0">
+      <tr>
+        <td>
+          <center>
+            <h1><u>Create Account</u></h1>
+            <form action="register-success.html" target="_blank">
+             <input type="text" placeholder="Enter your username" pattern="[A-Za-z0-9@#$_]{8,16}" title="Enter a input which consists of minimum 8 characters,alphabets,numbers and @#$_" required style="width: 197px;"><br><br>
+             <input type="email" placeholder="Enter your E-mail" pattern="[A-Za-z0-9#$_*]+@[A-Za-z0-9#$_*]+\.[A-Za-z]{2,}" title="Invalid E-mail" required style="width: 197px;"><br><br>
+             <input type="text" placeholder="+91" pattern="\+91" title="Enter Country code (India: +91)" required style="width: 7%;">
+             <input type="tel" placeholder="Enter Mobile number" pattern="[6-9][\d]{9}" title="Enter valid Indian mobile number"><br><br>
+             <input type="password" placeholder="Enter password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[\d+])(?=.*[@#$_])[A-Za-z0-9@#$_]{8,16}" required style="width: 197px;"><br><br>
+             <input type="submit" value="Register">
+             </center>
+            <input type="reset" style="margin-left: 7px; margin-bottom: 7px;">
+            </form>
+          
+          
+        </td>
+      </tr>
+     </table>
+     <br>
+     <a href="login.html">Already a user ? - Login</a>
+  </center>
+</body>
+</html>
