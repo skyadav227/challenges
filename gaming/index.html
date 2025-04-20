@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PUBG (karthik)</title>
+  <link rel="shortcut icon" href="images/pubg-helmet.png" type="image/x-icon">
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: black;
+      width: 100%;
+      font-family: monospace;
+      font-size: 17px;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    .main-div{
+      display: grid;
+      row-gap: 55px;
+      column-gap: 50px;
+      padding: 0 50px;
+    }
+    .main-div>div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .main-div>div>a>img{
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      transition: transform 0.5s smooth;
+      transition: box-shadow 0.3s ease;
+      border-radius: 30px;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+     }
+     header{
+      display: grid;
+      justify-items: center;
+      align-content: center;
+     }
+     .main-div>div>a>img:hover{
+      border: solid 2px orangered;
+      transform: scale(1.5);
+      box-shadow: 0px 0px 10px rgba(252, 1, 1, 0.9);
+     }
+    @media(max-width: 321px) {
+      .main-div{
+        grid-template-columns: 1fr;
+      }
+    }
+    @media(min-width: 314px) and (max-width: 720px) {
+      .main-div{
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+    @media(min-width: 721px) and (max-width: 999px) {
+      .main-div{
+        grid-template-columns: repeat(3,1fr);
+      }
+    }
+    @media(min-width: 1000px) {
+      .main-div{
+        grid-template-columns: repeat(4,1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/pubg-logo.png" alt="">
+  </header>
+  <div class="main-div">
+    <div>
+      <a href="https://pubg-mobile.en.uptodown.com/android/download" target="_blank">
+        <img src="images/pubg-global.png" alt="">
+        <p>PUBG Global </p>
+      </a>
+    </div>
+    <div>
+      <a href="https://pubg-mobile-lite.en.uptodown.com/android/download" target="_blank">
+        <img src="images/pubg-lite.png" alt="">
+      <p>PUBG Lite</p>
+      </a>
+      
+    </div>
+    <div>
+      <a href="https://battlegrounds-mobile-india.en.uptodown.com/android/download" target="_blank">
+        <img src="images/bgmi.png" alt="">
+      <p>BGMI India</p>
+      </a>
+      
+    </div>
+    <div>
+      <a href="https://pubg-mobile-kr.en.uptodown.com/android" target="_blank">
+        <img src="images/pubg-kr.png" alt="">
+      <p>PUBG Korea</p>
+      </a>
+      
+    </div>
+    <div>
+      <a href="https://pubg-exhilarating-battlefield.en.uptodown.com/android#google_vignette" target="_blank">
+        <img src="images/pubg-ch.png" alt="">
+      <p>PUBG China</p>
+      </a>
+      
+    </div>
+    <div>
+      <a href="https://pubg-mobile-tw.en.uptodown.com/android" target="_blank">
+        <img src="images/pubg-tw.png" alt="">
+      <p>PUBG Taiwan</p>
+      </a>
+      
+    </div>
+    <div>
+      <a href="https://pubg-mobile-vn.en.uptodown.com/android" target="_blank">
+        <img src="images/pubg-vn.png" alt="">
+        <p>PUBG Vietnam</p>
+      </a>
+     
+    </div>
+    <div>
+      <a href="https://pubg-new-state.en.uptodown.com/android" target="_blank">
+        <img src="images/pubg-ns.png" alt="">
+      <p>PUBG New-State</p>
+      </a>
+      
+    </div>
+    <div>
+      <a href="https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/" target="_blank">
+        <img src="images/pubg-pc.png" alt="">
+      <p>PUBG PC</p>
+      </a>
+      
+    </div>
+    <div>
+      <a href="https://www.playstation.com/en-in/games/playerunknowns-battlegrounds/" target="_blank">
+        <img src="images/pubg-ps.png" alt="">
+        <p>PUBG PlayStation</p>
+      </a>
+    
+    </div>
+    <div>
+      <a href="https://www.xbox.com/en-IN/games/store/pubg-battlegrounds/c0mn5dn8kr3f" target="_blank">
+        <img src="images/pubg-ps.png" alt="">
+        <p>PUBG XBOX</p>
+      </a>
+    
+    </div>
+    <div>
+      <a href="https://www.pubg.com/en/game-info/overview" target="_blank">
+        <img class="pubg" src="images/pubg-helmet.png" alt="">
+        <p>PUBG Corporation</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
