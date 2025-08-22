@@ -1,0 +1,207 @@
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-image: url(images/background.png);
+    }
+
+    .main-div {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+      margin: 20px;
+      padding: 20px;
+      position: relative;
+    }
+
+    h1 {
+      color: white;
+    }
+
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* Centers content horizontally */
+      flex-wrap: wrap;
+      /* Allows content to wrap on smaller screens */
+      width: 100%;
+      /* Ensures it takes full width */
+      text-align: center;
+      /* Aligns text properly */
+    }
+
+    .title p {
+      font-size: 5vw;
+      /* Makes font size responsive */
+      margin: 0 5px;
+      /* Adjusts spacing */
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      color: white;
+      text-shadow: 0 0 8px rgb(247, 247, 4);
+
+    }
+
+    .gear {
+      width: 4vw;
+      /* Makes the gear image responsive */
+      min-width: px;
+      /* Prevents it from becoming too small */
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgb(247, 247, 4);
+
+    }
+
+    table{
+      position: fixed;
+      background-color: navy;
+      color: white;
+      width: 70px;
+      
+    }
+
+    .piston {
+      height: 7vw;
+      width: 7vw;
+      z-index: 1;
+      
+    }
+
+    .category-name {
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: lightblue;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      /* box-shadow: 0px 0px 10px rgba(250, 249, 249, 0.9); */
+      width: 100%;
+      padding: 5px 5px 10px 5px;
+      border: solid 2px navy;
+
+    }
+
+    .card>img {
+      width: 100%;
+      height: 230px;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    .text>h2,
+    h3 {
+      line-height: 10px;
+      font-size: 100%;
+    }
+
+    .button-div {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
+      height: 100%;
+      background-color: orange;
+      color: white;
+      padding: 1px 6px 1px 6px;
+      border-radius: 13px;
+      border: solid 2px navy;
+      cursor: pointer;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 17px;
+
+    }
+
+    .menu {
+      width: 5vw;
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px rgba(240, 236, 236, 0.7);
+      position: fixed;
+      margin: -10px 0px 0px -40px;
+    }
+    
+    a {
+      color: white;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .gear {
+      animation: spin 2s linear infinite;
+      /* Spins continuously every 2 seconds */
+    }
+
+
+    @media  (max-width: 313px) {
+      .content{
+        grid-template-columns: 1fr;
+        
+      }
+      h1{
+        font-size: 20px;
+      }
+      .card{
+        height: 250px;
+      }
+      .card>img{
+        height: 150px;
+      }
+      
+    }
+    
+    @media (min-width: 314px) and (max-width: 750px)
+    
+      {
+      .content {
+        grid-template-columns: 1fr  1fr;
+      }
+      h1{
+        font-size: 20px;
+      }
+      .title {
+        width: 100%;
+
+      }
+    }
+
+    @media(min-width: 751px) and (max-width: 999px) {
+      .content {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      h1{
+        font-size: 50px;
+      }
+    }
+
+    @media (min-width: 1000px) {
+      .content {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      h1{
+        font-size: 50px;
+      }
+    }

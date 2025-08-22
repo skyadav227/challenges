@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RedBull.karthik</title>
+  <link rel="shortcut icon" href="images/mlogo.jpg" type="image/x-icon">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: rgb(0, 0, 0);
+      position: relative;
+      
+      scroll-behavior: smooth;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    
+    header {
+      position: fixed;
+      background-color: black;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      height: 60px;
+      border: solid 1px red;
+      z-index: 10;
+      width: 100%;
+      
+    }
+   
+    button {
+      border: none;
+      border-radius: 5px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      width: 70px;
+    }
+    
+    .h-div{
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      vertical-align: middle;
+      width: 100%;
+    }
+    .hleft{
+      align-items: center;
+      width: 100px;
+      vertical-align: middle;
+      
+      
+    }
+    .hmiddle{
+      display: flex;
+      width: 40%;
+    }
+    .hright{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 10px;
+      width: 30%;
+      flex-shrink: 0;
+      padding-right: 2rem;
+    }
+    .gif {
+      width: 20%;
+      z-index: 0;
+    }
+    .mlogo {
+      width: 80px;
+      height: 58px;
+      margin-top: 5px;
+      margin-left: 3px;
+    }
+    .search{
+      width: 100%;
+      background-color: rgb(232, 235, 237);
+      border: 2px solid red;
+      border-radius: 7px;
+      height: 25px;
+      color: black;
+        }
+    .logo{
+      width: 30%;
+      margin-top: 100px;
+      
+    }
+    .rb1 {
+      width: 70%;
+      margin-top: 50px;
+    }
+    .rb2 {
+    width: 50%;
+    margin-top: 70px;  
+  }
+  #about {
+
+    align-items: center;
+    margin-top: 50px;
+  }
+ #about>h3{
+  color: white;
+  display: flex;
+  justify-content: center;
+
+ }
+ #about>p{
+  color: white;
+  font-family: monospace;
+  margin: 10px;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  }
+ #about>div{
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  margin-top: 30px;
+ }
+ .contact{
+  margin-top: 60px;
+ }
+ .contact>h3{
+  color: white;
+  display: flex;
+  justify-content: center;
+
+ }
+ .contact>div{
+   display: flex;
+   justify-content: center;
+   column-gap: 20px;
+  
+ }
+ .contact>div>a>img{
+  width: 35px;
+  height: 30px;
+  border-radius: 7px;
+  border: 0.5px solid white;
+  margin-top: 10px;
+ }
+ .contact>p{
+  color: white;
+  text-align: center;
+  font-family: monospace;
+  margin-top: 20px;
+ }
+ 
+  @media (max-width: 320px) {
+    .bike {
+      width: 20%;
+      position: fixed;
+      right: 0;
+    }
+  }
+  @media (min-width: 321px) and (max-width: 1199px){
+    .bike {
+      width: 15%;
+      position: fixed;
+      right: 0;
+    }
+  } 
+  @media (min-width: 1200px) {
+    .bike {
+      width: 10%;
+      position: fixed;
+      right: 0;
+    }
+  }
+
+  </style>
+</head>
+<body>
+  <div class="main-div">
+    <header>
+      <div class="h-div">
+        <div class="hleft">
+          <a href="https://www.redbullracing.com/int-en" target="_blank"><img class="mlogo" src="images/mlogo.jpg" alt=""></a>
+        </div>
+        <div class="hmiddle">
+          <input class="search" type="search">
+        </div>
+        <div class="hright">
+          <a href="#home">Home</a>
+          <a href="#about">About.us</a>
+          <a href="#contact">Contact</a>
+          <a href="https://profile.oracle.com/myprofile/account/create-account.jspx" target="_blank" style="color: rgb(7, 7, 7); font-size: 13px;"><button>SignUp</button></a>
+          <a href="http://signon.oracle.com/signin" target="_blank" style="color: rgb(4, 4, 4); font-size: 13px;"><button>Login</button></a>
+        
+        </div>
+      </div>
+      
+    </header>
+  
+  
+
+    <main>
+      <p id="home">home</p>
+      <center>
+        <img class="logo" src="images/rb logo.jpg" alt="" width="50%">
+      </center>
+
+      <center>
+        <a href="https://www.f1authentics.com/products/red-bull-racing-rb19-official-show-car" target="_blank"><img class="rb1" src="images/rb f1.jpg" alt=""></a>
+     </center>
+
+     <center>
+      <a href="https://www.redbull.com/int-en/rookiescup/the-bike" target="_blank"><img class="rb2" src="images/rb motogp.jpg" alt=""></a>
+     </center>
+    </main>
+
+    <br>  
+    <marquee behavior="scroll" direction="right" scrollamount="50%"><img class="gif" src="images/Racing car.gif" alt=""></marquee>
+    <marquee behavior="scroll" direction="up" scrollamount="20" class="bike" style="position: fixed; top: 50px; height: 100vh; ">
+      <img src="images/bike.gif" alt="Moving Car" width="100%">
+    </marquee>
+  </div>
+<hr>
+
+  <p id="about">about</p>
+  <div id="about">
+    <h3>About us</h3>
+    <p>Red Bull Racing, currently competing as Oracle Red Bull Racing, is a Formula One team owned by the Austrian beverage company Red Bull, based in Milton Keynes, UK, and operating under an Austrian racing license.</p>
+  <h3>Full Team Name</h3>
+  <p>Oracle RedBull Racing</p>
+  <h3>Base</h3>
+  <p>Milton Keynes, United Kingdom</p>
+  <h3>Team Chief</h3>
+  <p>Christian Horner</p>
+  <h3>Technical Chief</h3>
+  <p>Pierre Waché</p>
+  <h3>Chassis</h3>
+  <p>RB21</p>
+  <h3>Power Unit</h3>
+  <p>Honda RBPT</p>
+  <h3>First Team Entry</h3>
+  <p>2005</p>
+  <h3>World Championships</h3>
+  <p>6</p>
+  <h3>Highest Race Finish</h3>
+  <p>1 (x122)</p>
+  <h3>Pole Positions</h3>
+  <p>103</p>
+  <h3>Fastest Laps</h3>
+  <p>99</p>
+  <br><br>
+  <p>DOWNLOAD THE OFFICIAL REDBULL APP</p>
+  <div>
+    <a href="https://play.google.com/store/apps/details?id=com.nousguide.android.rbtv&hl=en_IN&pli=1" target="_blank"><img src="images/android.png" alt=""></a>
+    <a href="https://apps.apple.com/us/app/red-bull-tv-watch-live-events/id364269164" target="_blank"><img src="images/ios.png" alt=""></a>
+  </div>
+ </div><br>
+<hr>
+
+<p id="contact"></p>
+  <div class="contact">
+    <h3>Contact us</h3>
+    <div>
+      <a href="https://www.facebook.com/redbullracing/" target="_blank"><img src="images/facebook.png" alt=""></a>
+      <a href="https://x.com/redbullracing" target="_blank"><img src="images/x.png" alt=""></a>
+      <a href="https://www.instagram.com/redbullracing/?hl=en" target="_blank"><img src="images/instagram.png" alt=""></a>
+      <a href="https://www.youtube.com/c/redbullracing" target="_blank"><img src="images/youtube.png" alt=""></a>
+    </div>
+    <p>© 2025 Red Bull Racing Ltd.</p>
+  </div>
+  
+  
+</body>
+</html>
