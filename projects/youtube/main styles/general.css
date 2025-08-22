@@ -1,0 +1,16 @@
+p {
+  
+  margin-top: 0;
+  margin-bottom: 0;
+  
+}
+
+body{
+  font-family: Roboto,arial; /* elements like font family ,text decoration , font weight, font color, can be inherited from the body element because all the elements or the code is written in the body as it helps us to write the common elements like font family, font size, etc in the body which can be inherited by the other elements or code inside the body element*/
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 97px;
+  padding-right: 25px;
+  background-color: rgb(245, 241, 241);
+  
+}
